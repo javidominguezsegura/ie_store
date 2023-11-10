@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --main:#2D7BFF;
+    --lightblue: #b4d0ff;
+    --shadow: 0 5px 10px rgba(0,0,0,.1);
+    background-color: #eee;
+}
+
+*{
+   font-family: 'Poppins', sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 70vh 130vh;
+    margin-top: -60px;
+}
+
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 85vh 15vh;
+    align-items: center;
+    justify-content: center;
+    padding:20px 50px;
+    padding-bottom: 60px;
+    grid-column: 1 / 2 ;
+ }
+ 
+ .container .content{
+    text-align: center;
+ }
+ 
+ .container .content h3{
+    font-size: 30px;
+    color:#333;
+ }
+ 
+ .container .content h3 span{
+    background: var(--main);
+    color:#fff;
+    border-radius: 5px;
+    padding:0 15px;
+ }
+ 
+ .container .content h1{
+    font-size: 50px;
+    color:#333;
+ }
+ 
+ .container .content h1 span{
+    color:var(--main);
+ }
+ 
+ .container .content p{
+    font-size: 25px;
+    margin-bottom: 20px;
+ }
+ 
+ .container .content .btn{
+    display: inline-block;
+    padding:10px;
+    font-size: 20px;
+    background: #333;
+    color:#fff;
+    margin:0 5px;
+    text-transform: capitalize;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+ }
+ 
+ .container .content .btn:hover{
+    background: var(--main);
+ }
+
+ .container img{
+    width: 22vh;
+    height: 7vh; 
+    justify-self: center;
+ }
+
+ 
+.cards {
+    grid-column: 2 / 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+
+.cards img {
+    width: 30vh;
+    height: 30vh;
+    border: 5px;
+}
+
+.card1, .card2 , .card3, .card4, .card5, .card6 { 
+    top:-50px; 
+    left:-35px; 
+    display:block; 
+    z-index:999; 
+    cursor: pointer; 
+    -webkit-transition-property: all; 
+    -webkit-transition-duration: 0.9s; 
+    -webkit-transition-timing-function: ease; 
+    padding: 12px; 
+    background-color: var(--lightblue);
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    } 
+    
+    /*change the number below to scale to the appropriate size*/ 
+    .card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover, .card6:hover,
+    .thumbnail:hover { 
+    transform: scale(1.1); 
+
+    
+    }
