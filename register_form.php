@@ -75,4 +75,11 @@ if(isset($_POST['submit'])){
 </div>
 
 </body>
+
+<footer style="display:flex; justify-content: center; gap:60px;">
+    <p>© 2023 IE Store Inc. All Rights Reserved.</p>
+    <p>Developed by JDS</p>
+    <p> Designed on 08/11/2023 </p>
+      
+</footer>
 </html>

@@ -39,6 +39,8 @@ if(isset($_POST['submit'])){
 };
 ?>
 
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,7 +60,7 @@ if(isset($_POST['submit'])){
    <form action="" method="post">
       <h3 style="color:var(--main)"> LOG IN </h3>
       <p style="font-size:17px;margin-top:-5px"> Buy IE merchandising on-line </p>
-      <?php
+   <?php
       if(isset($error)){
          foreach($error as $error){
             echo '<span class="error-msg">'.$error.'</span>';
