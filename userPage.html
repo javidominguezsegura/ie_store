@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>    
+    <div >
+        <nav>
+        <ul>
+            <li>
+                <img src="logoIE.png" class="logoIE">
+            </li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">New Collection</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+      </div>
+
+
+
+<div>
+  
+    <div class="wrapper"> 
+      
+     <div class="container">
+
+            <div class="content">
+                <h3>Hi, <span> user </span></h3>
+                <h1>welcome <span> <?php echo $_SESSION['user_name'] ?> </span></h1>
+                <p> What do you want to buy?</p>
+                <a href="register_form.php" class="btn">register</a>
+                <a href="logout.php" class="btn" onclick="alert('You have been logged out!')">log out</a>
+            </div>
+            <img src="https://cdn.cookielaw.org/logos/e8ca50c1-d340-4b7f-b6e8-46a90c64bb3d/4c7de17b-b462-4bc0-9dba-e6891e84c2c2/fea98b3c-e01d-4025-96f7-ab0b68c7f05d/LOGO-UNIVERSITY.png" alt="">
+        </div>
+
+        <div class="Title">
+<img class="titleImage"   src="iestore-5.jpg"/>
+        <a href="#cards" class="titleText">Explore our new Collection</a>
+            </div>
+
+
+
+
+         </div>
+     </div>
+    
+
+     <h1 class="CollectionTitle">Our New Collection</h1>
+     <div id="cards" class="cards">
+
+        <div class="card1">
+            <img src="https://store.ie.edu/wp-content/uploads/2020/05/gatscreatoriebs19-navy-t-shirt-front.jpg" alt="">
+            <h5>IE T-shirt</h5>
+            <p>Price: 40$</p>
+        </div>
+
+        <div class="card2">
+            <img src="https://store.ie.edu/wp-content/uploads/2023/01/GARSOFTSWOMIEU22N_01.jpg" alt="">
+            <h5>IE Women's Jacket</h5>
+            <p>Price: 120$</p>
+        </div>
+
+        <div class="card3">
+            <img src="https://store.ie.edu/wp-content/uploads/2020/05/gastkidtshibsmm18-navy-t-shirt-front-800x893.jpg" alt="">
+            <h5>IE Business School Kids T-Shirt</h5>
+            <p>Price: 28$</p>
+        </div>
+
+        <div class="card4">
+            <img src="https://store.ie.edu/wp-content/uploads/2023/03/87A4902-600x670.jpg" alt="">
+            <h5>Ugly Ass T-shirt</h5>
+            <p>Price: 40$</p>
+        </div>
+
+        <div class="card5">
+            <img src="https://store.ie.edu/wp-content/uploads/2020/05/MERCOOLBOTTUNIV19-2.jpg" alt="">
+            <h5>IE Cool Bottle</h5>
+            <p>Price: 24$</p>
+        </div>
+
+
+        <div class="card6">
+        <a href="worm.php"> <img src="https://store.ie.edu/wp-content/uploads/2022/11/GARSWCROPSTIEU22N_C727_001.jpg" alt=""></a> 
+            <h5>IEU Sweatshirt</h5>
+            <p>Price: 54$</p>
+        </div>
+
+        <div class="card6">
+            <a href="worm.php"> <img src="https://store.ie.edu/wp-content/uploads/2021/01/GASTCREATOIEBSK19_grey_01.jpg" alt=""></a> 
+                <h5>IEU Sweatshirt</h5>
+                <p>Price: 27$</p>
+            </div>
+            <div class="card6">
+                <a href="worm.php"> <img src="https://store.ie.edu/wp-content/uploads/2021/01/GASTALUMNIIEBSS17_white_01.jpg" alt=""></a> 
+                    <h5>IEU Sweatshirt</h5>
+                    <p>Price: 21$</p>
+                </div>
+                
+
+
+
+     </div>
+     </div>
+</body>
+
+<footer style="display:flex; justify-content: center; gap:60px;">
+    <p>© 2023 IE Store Inc. All Rights Reserved.</p>
+    <p>Developed by JDS</p>
+    <p> Designed on 08/11/2023 </p>
+      
+</footer>
+</html>
